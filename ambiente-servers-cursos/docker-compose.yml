@@ -1,0 +1,66 @@
+version: '3'
+services:
+  ansible:
+    build:
+      context: .
+      dockerfile: 1-servidor-central-ansible
+    volumes:
+      - ./ansible:/ansible
+    depends_on:
+      - service1
+      - service2
+      - service3
+      - service4
+      - service5
+      - service6
+      - service7
+    networks:
+      - minha-rede
+    command: ansible-playbook /ansible/playbook.yml
+    # Outras configurações adicionais do serviço Ansible
+
+
+  service1:
+    container_name: servidor-terraform  # Nome do container existente
+    image: devopsdavi/servidor-terraform:1.0
+    command: /usr/local/lib/code-server/code-server --user-data-dir=/vagrant --bind-addr=0.0.0.0:3000 --auth none
+    ports:
+      - 3000:3000
+
+
+  service2:
+    container_name: servidor-jupyter  # Nome do container existente
+    image: jupyter/base-notebook:latest
+    ports:
+      - "8888:8888"
+
+
+  service3:
+    container_name: servidor-dev-web  # Nome do container existente
+    image: servidor-dev-web:latest
+    ports:
+      - "4000:4000"
+
+
+  service4:
+    container_name: servidor-dev-pycharm  # Nome do container existente
+    image: pycharm:latest
+    command: 
+
+  service5:
+    container_name: servidor-dev-java-intellij  # Nome do container existente
+    image: pycharm:latest
+    command: 
+
+  service6:
+    container_name: servidor-dev-dotnet-visual-studio  # Nome do container existente
+    image: pycharm:latest
+    command: 
+
+  service7:
+    container_name: servidor-bancos-de-dados-all  # Nome do container existente
+    image: pycharm:latest
+    command: 
+
+networks:
+  minha-rede:
