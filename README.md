@@ -4,20 +4,15 @@
 
 Este repositório contém Dockerfiles para estudos sem precisar instalar no equipamentos as tecnologias. As tecnologias abrangidas incluem:
 
-![Ícone do Ambiente-Web](URL_DO_ICONE_AMBIENTE_WEB)
-- Ambiente-Web
+<img src="https://img.icons8.com/color/32/000000/web.png"/> - Ambiente-Web
 
-![Ícone do IntelliJ](URL_DO_ICONE_INTELLIJ)
-- IntelliJ
+<img src="https://img.icons8.com/color/32/000000/intellij-idea.png"/> - IntelliJ
 
-![Ícone do Jupyter](URL_DO_ICONE_JUPYTER)
-- Jupyter
+<img src="https://img.icons8.com/color/32/000000/jupyter-notebook.png"/> - Jupyter
 
-![Ícone do PyCharm](URL_DO_ICONE_PYCHARM)
-- PyCharm
+<img src="https://img.icons8.com/color/32/000000/pycharm.png"/> - PyCharm
 
-![Ícone do Terraform](URL_DO_ICONE_TERRAFORM)
-- Terraform
+<img src="https://img.icons8.com/color/32/000000/terraform.png"/> - Terraform
 
 ## Instalação
 
