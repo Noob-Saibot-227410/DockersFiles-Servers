@@ -8,7 +8,7 @@ Este repositório contém Dockerfiles para estudos sem precisar instalar no equi
 
 <img src="https://img.icons8.com/color/32/000000/intellij-idea.png"/> - IntelliJ
 
-<img src="https://img.icons8.com/color/32/000000/notebook.png"/> - Jupyter
+<img src="https://img.icons8.com/color/32/000000/python.png"/> - Jupyter
 
 <img src="https://img.icons8.com/color/32/000000/pycharm.png"/> - PyCharm
 
